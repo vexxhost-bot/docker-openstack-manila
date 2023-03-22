@@ -59,7 +59,7 @@ jobs:
           PROJECT_REF=${{ env.PROJECT_REF }}
           EXTRAS=
           PROFILES=
-          DIST_PACKAGES=iproute2
+          DIST_PACKAGES=iproute2 openvswitch-switch
           PIP_PACKAGES=cryptography python-binary-memcached
         cache-from: type=gha,scope=${{ matrix.from }}-${{ matrix.release }}
         cache-to: type=gha,mode=max,scope=${{ matrix.from }}-${{ matrix.release }}
